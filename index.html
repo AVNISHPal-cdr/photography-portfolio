@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Photography Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>📸 My Photography Portfolio</h1>
+    <nav>
+      <ul>
+        <li><a href="#" data-category="weddings">Weddings</a></li>
+        <li><a href="#" data-category="nature">Nature</a></li>
+        <li><a href="#" data-category="portraits">Portraits</a></li>
+        <li><a href="#" data-category="events">Events</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Gallery -->
+  <main>
+    <section id="gallery">
+      <div class="photo" data-category="weddings">
+        <img src="wedding.jpg" alt="Wedding Photo">
+        <p>Wedding Bliss</p>
+      </div>
+      <div class="photo" data-category="nature">
+        <img src="nature.jpg" alt="Nature Photo">
+        <p>Sunset Serenity</p>
+      </div>
+      <div class="photo" data-category="portraits">
+        <img src="portrait.jpg" alt="Portrait Photo">
+        <p>Elegant Portrait</p>
+      </div>
+      <div class="photo" data-category="events">
+        <img src="event.jpg" alt="Event Photo">
+        <p>Memorable Event</p>
+      </div>
+    </section>
+
+    <!-- Booking Form -->
+    <section id="booking">
+      <h2>Book a Photography Session</h2>
+      <form id="bookingForm">
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="email" id="email" placeholder="Your Email" required>
+        <select id="sessionType" required>
+          <option value="">Select Session Type</option>
+          <option value="weddings">Wedding</option>
+          <option value="nature">Nature</option>
+          <option value="portraits">Portrait</option>
+          <option value="events">Event</option>
+        </select>
+        <input type="date" id="date" required>
+        <button type="submit">Book Now</button>
+      </form>
+      <div id="confirmation"></div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 My Photography Portfolio | Capturing Moments That Last Forever</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
